@@ -1,0 +1,149 @@
+ /* Reset básico */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+html,
+body {
+min-height: 100%;
+}
+ /* Corpo */
+ body {
+   font-family: Arial, sans-serif;
+   background-color: #e02a2a;
+   color: #dbdada;
+   background-image: url('aranha.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+ }
+
+ /* Container estilo Bootstrap */
+ .container {
+   max-width: 400px;
+   margin: 50px auto;
+   padding: 20px;
+ }
+
+ /* Centralização */
+ .text-center {
+   text-align: center;
+ }
+
+ /* Avatar */
+ .avatar {
+   width: 120px;
+   border-radius: 50%;
+   margin-bottom: 15px;
+ }
+
+ /* Títulos */
+ .title {
+   font-size: 24px;
+   margin-bottom: 5px;
+ }
+
+ .subtitle {
+   font-size: 14px;
+   margin-bottom: 20px;
+   color: #fffcfc;
+ }
+
+ /* Links */
+ .links {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-bottom: 20px;
+ }
+
+ /* Botões estilo Bootstrap */
+ .btn {
+   display: rgb(238, 19, 19);
+   padding: 10px;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: 0.3s;
+   cursor: pointer;
+ }
+
+ /* Variantes */
+ .btn-primary {
+   background-color: #ec2a2a;
+   color: rgb(129, 1, 12);
+ }
+
+ .btn-secondary {
+   background-color: rgb(97, 5, 5);
+   color: white;
+ }
+
+ .btn-dark {
+   background-color: rgb(233, 61, 61);
+   color: rgb(255, 254, 254);
+ }
+
+ .btn-outline {
+   border: 1px solid #f5eeee;
+   background: transparent;
+ }
+
+ /* Hover */
+ .btn:hover {
+   opacity: 0.8;
+ }
+
+ /* Tema escuro */
+ .dark-mode {
+   background-color: #070606;
+   color: #f5efef;
+ }
+
+ .dark-mode .btn-outline {
+   color: #ffffff;
+   border-color: #550a0a;
+   text-decoration: none;
+   border-radius: 5px;
+   transition: 0.3s;
+   cursor: pointer;
+ }
+
+ /* Variantes */
+ .btn-primary {
+   background-color: #fd0000;
+   color: red;
+ }
+
+ .btn-secondary {
+   background-color: rgb(204, 17, 17);
+   color: white;
+ }
+
+ .btn-dark {
+   background-color: rgb(182, 15, 15);
+   color: rgb(254, 254, 255);
+ }
+
+ .btn-outline {
+   border: 1px solid #e9e4e4;
+   background: transparent;
+ }
+
+ /* Hover */
+ .btn:hover {
+   opacity: 0.8;
+ }
+
+ /* Tema escuro */
+ .dark-mode {
+   background-color: #ee2424f5;
+   color: #e1ebe3;
+   background-image: url(teias.png);
+   background-position: center;
+ }
+
+ .dark-mode .btn-outline {
+   color: #ffffff;
+   border-color: #f1f1f1;
+ }

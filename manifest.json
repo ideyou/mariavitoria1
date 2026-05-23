@@ -1,0 +1,32 @@
+ {
+  "id": "SPIDERS",
+  "name": "Maria Teia",
+  "short_name": "Maria Teia",
+  "scope": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "theme_color": "#FF0000",
+  "background_color": "#1f1f1f",
+  "icons": [
+    {
+      "src": "profile.avif",
+      "sizes": "any",
+      "type": "image/avif"
+    }
+  ],
+  "app_name": "Maria Teia",
+  "description": "Meus Homens Aranhas Favoritos🕷️❤️"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
