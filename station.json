@@ -1,0 +1,12 @@
+{
+  "color": "white",
+  "background_color": "black",
+  "icons": [
+    {
+      "src": "profile.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ],
+  "name": "Maria Victoria"
+}
