@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MSN - Messi, Suárez e Neymar</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        ),
+        url("img/trio-fundo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.fotos img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ffcc00;
+}
+
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:70px;
+    color:#ffcc00;
+}
+
+header p{
+    font-size:22px;
+}
+
+.trio{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    padding:40px;
+}
+
+.card{
+    width:300px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px;
+    color:#ffcc00;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.historia{
+    max-width:900px;
+    margin:auto;
+    padding:40px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+}
+.galeria{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.galeria h2{
+    text-align: center;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.fotos img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: 0.4s;
+}
+
+.fotos img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #ffcc00;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.8);
+    border-top:2px solid #ffcc00;
+}
+header h1{
+    font-size:70px;
+    color:#ffcc00;
+    text-shadow: 0 0 10px #ffcc00,
+                 0 0 20px #ffcc00,
+                 0 0 40px #ffcc00;
+}
+@keyframes brilho {
+    0%{
+        text-shadow: 0 0 5px #ffcc00;
+    }
+
+    50%{
+        text-shadow:
+            0 0 10px #ffcc00,
+            0 0 20px #ffcc00,
+            0 0 40px #ffcc00;
+    }
+
+    100%{
+        text-shadow: 0 0 5px #ffcc00;
+    }
+}
+
+header h1{
+    font-size: 70px;
+    color: #ffcc00;
+    animation: brilho 5s infinite;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    background: rgba(0,0,0,0.9);
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: #ffcc00;
+}
+.capa{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+    padding:50px;
+    text-align:center;
+}
+
+.stats h3{
+    color:#ffcc00;
+    font-size:50px;
+}
+
+.capa h1{
+    font-size: 80px;
+    color: #ffcc00;
+    text-shadow: 0 0 20px #ffcc00;
+}
+
+.capa p{
+    font-size: 30px;
+    color: white;
+}
+</style>
+</head>
+<body>
+    <nav class="menu">
+     <ul>
+         <li><a href="#inicio">Início</a></li>
+         <li><a href="#galeria">Galeria</a></li>
+         <li><a href="#historia">História</a></li>
+     </ul>
+    </nav>
+
+    <section class="capa">
+        <h1>O MAIOR TRIO DA HISTÓRIA</h1>
+        <p>Messi • Suárez • Neymar</p>
+    </section>
+ <header>
+     <h1>MSN</h1>
+     <p>Messi • Suárez • Neymar</p>
+ </header>
+ <section id="galeria" class="galeria">
+     <h2>Galeria MSN</h2>
+
+     <div class="fotos">
+        <img src="img/mestre.jpg">
+        <img src="img/neybarça.jpg">
+        <img src="img/suarez.jpg">
+        <img src="img/msn1.jpg" alt="">
+        <img src="img/msn2.jpg" alt="">
+        <img src="img/msn3.jpg" alt="">
+        <img src="img/msn4.jpg" alt="">
+        <img src="img/msn5.jpg" alt="">
+        <img src="img/trio30.jpg" alt="">
+     </div>
+ </section>
+
+ <section id="historia" class="historia">
+     <h2>A História do MSN</h2>
+     <br>
+     <p>
+         O trio formado por Messi, Suárez e Neymar marcou época no Barcelona.
+         Entre 2014 e 2017, encantou o mundo com gols, títulos e jogadas inesquecíveis.
+     </p>
+ </section>
+ <section class="stats">
+     <div>
+         <h3>364</h3>
+         <p>Gols</p>
+     </div>
+
+     <div>
+         <h3>173</h3>
+         <p>Assistências</p>
+     </div>
+
+     <div>
+         <h3>9</h3>
+         <p>Títulos</p>
+     </div>
+ </section>
+
+ <footer>
+     © 2026 - Site dedicado ao Trio MSN
+ </footer>
+
+</body>
+</html>

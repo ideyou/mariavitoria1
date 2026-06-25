@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        ),
+        url("img/junior.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+.galeria-titulo{
+    text-align: center;
+    color: #ffdf00;
+    margin-bottom: 20px;
+}
+
+footer{
+    margin-top: 45px;
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+}
+
+.barra-navegacao{
+    height: 60px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+    color: #ffdf00;
+    font-size: 24px;
+    font-weight: bold;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+h1{
+    text-align: center;
+    color: #ffdf00;
+    font-size: 60px;
+    text-shadow: 0 0 15px rgba(255,223,0,0.5);
+}
+
+.subtitulo{
+    text-align: center;
+    color: white;
+    font-size: 22px;
+    margin-top: -20px;
+}
+
+.texto{
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.bnt{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.img-error img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 2px solid #ffdf00;
+    box-shadow: 0 0 20px rgba(255,223,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.img-error img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 0 30px rgba(255,223,0,0.6);
+}
+
+.img-error{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bnt a {
+    transition: 0.3s;
+}
+
+.btn{
+    color: rgb(7, 95, 228);
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    min-width: 60px;
+    padding: 5px 15px;
+    border-radius: 4px;
+}
+
+.p-1{ padding: 1rem !important;}
+.p-2{ padding: 2rem !important;}
+.p-3{ padding: 3rem !important;}
+.p-4{ padding: 4rem !important;}
+.p-5{ padding: 5rem !important;}
+
+.text-branco{ color: #fff !important;}
+.text-preto{ color: #000000 !important;}
+
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+[class^="col-"]{
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.col-1{ width: 8.333%; }
+.col-2{ width: 16.666%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.333%; }
+.col-5{ width: 41.666%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.333%; }
+.col-8{ width: 66.666%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.333%; }
+.col-11{ width: 91.666%; }
+.col-12{ width: 100%; }
+
+.d-flex{
+    display: flex;
+}
+
+.alinhar-meio{
+    align-items: center;
+}
+
+.capa-conteudo{
+    max-width: 800px;
+    padding: 20px;
+}
+
+.frase{
+    color: #ffdf00;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.capa h1{
+    font-size: clamp(50px, 10vw, 100px);
+
+    color: white;
+
+    text-shadow:
+        0 0 10px #ffdf00,
+        0 0 20px #ffdf00,
+        0 0 40px #ffdf00;
+}
+
+.descricao{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.btn-instagram{
+    display: inline-block;
+
+    padding: 18px 35px;
+
+    background: linear-gradient(
+        135deg,
+        #222121,
+        #414040
+    );
+
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+    border-radius: 50px;
+
+    box-shadow:
+        0 0 15px #312e2f,
+        0 0 30px #292828;
+
+    transition: 0.3s;
+}
+
+.btn-instagram:hover{
+    transform: scale(1.08);
+}
+
+.img-error img{
+    width: 300px;
+}
+
+.capa{
+    height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
+        ),
+        url("img/neyMAR.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+@media (max-width: 768px){
+
+    .capa h1{
+        font-size: 60px;
+    }
+
+    .descricao{
+        font-size: 18px;
+    }
+
+    .frase{
+        font-size: 18px;
+    }
+
+    .img-error img{
+        width: 90%;
+        height: auto;
+    }
+
+    .barra-navegacao{
+        font-size: 18px;
+    }
+}
+
+
